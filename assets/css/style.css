@@ -1,0 +1,328 @@
+
+/* Using only BootStrap and CSS. No media queries. 
+There are places I could have reduced the need for css styling by using bootstrap class instead. 
+Time permitting I would have went back and removed the css styling to replace with BootStrap classes. */
+
+* {box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/concrete-texture.png");
+    color: #777777;
+    height: 100%;
+    margin: 0px;
+    font-size: 100%;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    border-bottom-width: 2px;
+    width: 100%;
+    overflow: auto;
+}
+
+footer {
+    background-color: #666666;
+    color: #ffffff;
+    border-top-style: solid;
+    border-top-color: #4aaaa5;
+    border-top-width: 8px;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    min-width: 20px;
+}
+
+h1 {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding: 30px;
+    float: left;
+    margin: 0px;
+    font-size: 2.0em;
+    font-weight: bold;
+}
+
+/* Probably can make height auto adjust instead of a fixed position from top. Need to research */
+h5 {
+    position: relative;
+    float: right;
+    color: #777777;   
+    top: 35px; 
+}
+
+section {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #777;
+    max-width: 640px;
+    width: 100%;
+    padding-top: 40px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    margin-right: 20px;
+    float: left;    
+}
+
+p {
+    padding-top: 20px;
+    font-size: 1em;
+    margin: 0px;
+}
+
+form {
+    padding-top: 20px;
+    }
+
+input {
+    width: 100%;
+    padding: 0px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin-top: 5px;
+}
+
+img {
+    padding-bottom: 20px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -60px;
+}
+
+.relative {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.content {
+    clear: both;
+    background-color: #ffffff;
+    width: 100%;
+    border: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    padding: 10px 30px 30px 30px;
+    
+}
+
+.bodyh1 {
+    clear: both;
+    background-color: #ffffff;
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    border-bottom-style: solid;
+    border-bottom-color: #dddddd;
+    border-bottom-width: 3px;
+    width: 100%;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.sidepanel {
+    background-color: #ffffff;
+    width: 100%;
+    max-height: 140px;
+    max-width: 320px;
+    border: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    padding: 10px 30px 30px 30px;
+    margin-left: 20px;
+    margin-top: 50px;
+    float: left;
+}
+
+.buttons {
+    padding-top: 15px;
+}
+
+.subcontent {
+    padding-top: 60px;
+}
+
+.center-block {
+    margin: auto;
+    max-width: 300px;   /* <---set to match max picture width */
+}
+
+.portfolio {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin: 30px 30px 0px 0px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.completedprojects {
+    clear: both;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding: 15px 0px 15px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer, .push {
+    height: 60px;
+    margin-top: 10px;
+}
+
+#matthewgeddes {
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+}
+
+#matthewgeddes:hover {
+    text-shadow: 1px 1px 2px black;
+}
+
+#leftright { 
+    border-color: #dddddd;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#profilepicture {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 14px;
+}
+
+#aboutme {
+    font-size: 1.6em;
+}
+
+#message {
+    height: 200px;
+}
+
+#submitbutton {
+    width: 100px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#submitbutton:hover {
+    background-color: #377F7C;
+}
+
+#copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 100%;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .header {
+        max-width: 748px;
+    }
+
+    section {
+        max-width: 500px;
+    }
+
+      .sidepanel {
+        max-width: 249px;
+    }
+
+    .relative {
+        max-width: 748px;
+    }
+
+    #profilepicture {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        max-width: 748px;
+    }
+
+    section {
+        max-width: 748px;
+    }
+
+      .sidepanel {
+        max-width: 748px;
+    }
+
+    .relative {
+        max-width: 748px;
+        display: inline-block;
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+        max-width: 640px;
+    }
+
+    section {
+        max-width: 640px;
+    }
+
+      .sidepanel {
+        max-width: 640px;
+    }
+
+    .relative {
+        max-width: 640px;
+        display: inline-block;
+    }
+}
