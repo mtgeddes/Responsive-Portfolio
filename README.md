@@ -1,2 +1,2 @@
 # Example Responsive-Portfolio
-This is Responsive-Portfolio
+This is practice Responsive-Portfolio
